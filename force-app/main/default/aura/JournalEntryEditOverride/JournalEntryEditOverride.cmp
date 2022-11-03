@@ -1,0 +1,11 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,lightning:actionOverride">
+    <lightning:card title="Journal Entry Details are Locked">
+        <p class="slds-p-around_medium">
+            Journal Entries can not be edited outside of regular sales and amendment flows. Please contact your system administrator if any details are inaccurate.
+        </p>
+        <p class="slds-p-vertical_x-small slds-p-horizontal_medium">
+            <lightning:navigation aura:id="navigation"/>
+            <a onclick="{!c.navigateToRecord}" name="Go To Record">Go To Record</a>
+        </p>
+    </lightning:card>
+</aura:component>

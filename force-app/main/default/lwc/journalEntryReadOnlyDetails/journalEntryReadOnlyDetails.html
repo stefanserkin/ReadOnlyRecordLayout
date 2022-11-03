@@ -1,0 +1,301 @@
+<template>
+    <lightning-card>
+
+        <lightning-accordion 
+            allow-multiple-sections-open
+            active-section-name={activeSections}
+        >
+
+            <lightning-accordion-section name="Information" label="Information">
+                <lightning-record-view-form
+                    record-id={recordId}
+                    object-api-name={objectApiName}
+                >
+                    <div class="slds-grid">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-output-field field-name="TREX1__Effective_Date_Time__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Account__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Contact__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Accounting_Event__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Type__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__GL_Code__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="GL_Account_Name__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Is_Tax__c">
+                            </lightning-output-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-output-field field-name="TREX1__Debit__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Credit__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Outstanding_Balance__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Unapplied_Credit_Amount__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Total_Amount_Paid__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Payment_Amount_Total__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Total_Account_Balance__c">
+                            </lightning-output-field>
+                        </div>
+                    </div>
+                </lightning-record-view-form>
+            </lightning-accordion-section>
+
+            <lightning-accordion-section name="Descriptions" label="Description">
+                <lightning-record-view-form
+                    record-id={recordId}
+                    object-api-name={objectApiName}
+                >
+                    <div class="slds-grid">
+                        <div class="slds-col slds-size_3-of-4">
+                            <lightning-output-field field-name="Description__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Purchase_Description__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Payment_Information__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__System_Audit__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Annotation__c">
+                            </lightning-output-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-4"></div>
+                    </div>
+                </lightning-record-view-form>
+            </lightning-accordion-section>
+
+            <lightning-accordion-section name="RelatedTo" label="Related To">
+                <lightning-record-view-form
+                    record-id={recordId}
+                    object-api-name={objectApiName}
+                >
+                    <div class="slds-grid">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-output-field field-name="TREX1__Transaction__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Billing_Schedule__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Registration__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Rental_Contract__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Membership_Group__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Membership__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Pass_Decrement__c">
+                            </lightning-output-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-output-field field-name="recpay_tpay_Transaction__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Transaction_Line_Item__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Payment_Arrangement__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Course_Option_Enrollment__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Booking__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Add_On__c">
+                            </lightning-output-field>
+                        </div>
+                    </div>
+                </lightning-record-view-form>
+            </lightning-accordion-section>
+
+            <lightning-accordion-section name="PaymentInformationARDebits" label="Payment Information (for AR debits)">
+                <lightning-record-view-form
+                    record-id={recordId}
+                    object-api-name={objectApiName}
+                >
+                    <div class="slds-grid">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-output-field field-name="TREX1__Payment_1__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Payment_2__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Payment_3__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Payment_4__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Payment_5__c">
+                            </lightning-output-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-output-field field-name="TREX1__Payment_1_Amount__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Payment_2_Amount__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Payment_3_Amount__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Payment_4_Amount__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Payment_5_Amount__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Excess_Payment_Link_Payment_Amount_Sum__c">
+                            </lightning-output-field>
+                        </div>
+                    </div>
+                </lightning-record-view-form>
+            </lightning-accordion-section>
+
+            <lightning-accordion-section name="LinkedChargeAmounts" label="Linked Charge Amounts (for AR credits)">
+                <lightning-record-view-form
+                    record-id={recordId}
+                    object-api-name={objectApiName}
+                >
+                    <div class="slds-grid">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-output-field field-name="TREX1__Payment_1_Amount_Total__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Payment_2_Amount_Total__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Payment_3_Amount_Total__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Payment_4_Amount_Total__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Payment_5_Amount_Total__c">
+                            </lightning-output-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-output-field field-name="TREX1__Has_Payment_Link__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Payment_Links_Amount_Total__c">
+                            </lightning-output-field>
+                        </div>
+                    </div>
+                </lightning-record-view-form>
+            </lightning-accordion-section>
+
+            <lightning-accordion-section name="BillingAndPaymentInfo" label="Billing and Payment Info">
+                <lightning-record-view-form
+                    record-id={recordId}
+                    object-api-name={objectApiName}
+                >
+                    <div class="slds-grid">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-output-field field-name="TREX1__je_Global_Billing_Group__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Available_Billing_Payment_Credit__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Unallocated_Credit_Billing_GBG__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Unallocated_Credit_Billing_GBG_Name__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Unallocated_Credit_Billing_GBG_Id__c">
+                            </lightning-output-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-output-field field-name="TREX1__Billing_Batch__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="recpay_External_Transaction_Type__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__External_Ticket_Id__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__External_Transaction_Id__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__External_Gift_Card__c">
+                            </lightning-output-field>
+                        </div>
+                    </div>
+                </lightning-record-view-form>
+            </lightning-accordion-section>
+
+            <lightning-accordion-section name="ReversalAndRefundInfo" label="Reversal &amp; Refund Information">
+                <lightning-record-view-form
+                    record-id={recordId}
+                    object-api-name={objectApiName}
+                >
+                    <div class="slds-grid">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-output-field field-name="TREX1__Payment_Reversed__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Reversal_JE__c">
+                            </lightning-output-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-output-field field-name="TREX1__Total_Reversed__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Amount_Remaining_For_Reversal__c">
+                            </lightning-output-field>
+                        </div>
+                    </div>
+                </lightning-record-view-form>
+            </lightning-accordion-section>
+
+            <lightning-accordion-section name="RevenueRecognition" label="Revenue Recognition">
+                <lightning-record-view-form
+                    record-id={recordId}
+                    object-api-name={objectApiName}
+                >
+                    <div class="slds-grid">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-output-field field-name="TREX1__Initial_Revenue_Recognition_Type__c">
+                            </lightning-output-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-output-field field-name="TREX1__Revenue_Recognition_Policy__c">
+                            </lightning-output-field>
+                        </div>
+                    </div>
+                </lightning-record-view-form>
+            </lightning-accordion-section>
+
+            <lightning-accordion-section name="DailyGLSummary" label="Daily GL Summary">
+                <lightning-record-view-form
+                    record-id={recordId}
+                    object-api-name={objectApiName}
+                >
+                    <div class="slds-grid">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-output-field field-name="TREX1__je_Daily_GL_Account_Summary__c">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__je_Daily_Journal_Summary__c">
+                            </lightning-output-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-output-field field-name="TREX1__Has_Been_Summarized__c">
+                            </lightning-output-field>
+                        </div>
+                    </div>
+                </lightning-record-view-form>
+            </lightning-accordion-section>
+
+            <lightning-accordion-section name="System Information" label="System Information">
+                <lightning-record-view-form
+                    record-id={recordId}
+                    object-api-name={objectApiName}
+                >
+                    <div class="slds-grid">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-output-field field-name="CreatedDate">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="CreatedById">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="TREX1__Legacy_Id__c">
+                            </lightning-output-field>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-output-field field-name="LastModifiedDate">
+                            </lightning-output-field>
+                            <lightning-output-field field-name="LastModifiedById">
+                            </lightning-output-field>
+                        </div>
+                    </div>
+                </lightning-record-view-form>
+            </lightning-accordion-section>
+
+        </lightning-accordion>
+
+    </lightning-card>
+</template>

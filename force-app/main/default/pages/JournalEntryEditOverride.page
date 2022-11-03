@@ -1,0 +1,6 @@
+<apex:page standardController="TREX1__Journal_Entry__c">
+    <h1>Journal Entry details are locked</h1>
+    <p>
+        Journal Entries can not be edited outside of regular sales and amendment flows. Please contact your system administrator if any details are inaccurate.
+    </p>
+</apex:page>
